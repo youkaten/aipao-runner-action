@@ -128,7 +128,7 @@ def run():
     print("Steps:", RunStep)
     print("----------------------")
     if (endJson['Success']):
-        sendMsg('跑步成功！')
+        
         print("[+]OK:", endJson['Data'])
     else:
         sendMsg('跑步失败！')
