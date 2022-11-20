@@ -95,7 +95,7 @@ def run():
           getSchoolJson['Data']['SchoolRun']['MinSpeed'],
           getSchoolJson['Data']['SchoolRun']['MaxSpeed'],
           getSchoolJson['Data']['SchoolRun']['Lengths'])
-    startRunningUrl = API_ROOT + token + '/QM_Runs/SRS?S1=30.534736&S2=114.367788&S3=' + str(Lengths)
+    startRunningUrl = API_ROOT + token + '/QM_Runs/SRS?S1=32.34886&S2=119.406561&S3=' + str(Lengths)
     print("[*]DEBUG: startRunningUrl=" + startRunningUrl)
     startRunningRequests = requests.get(startRunningUrl, headers=schoolHeaders, data={})
     startRunningJson = json.loads(startRunningRequests.content.decode('utf8', 'ignore'))
